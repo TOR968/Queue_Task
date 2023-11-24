@@ -1,6 +1,6 @@
 package codefinity.taskManager;
 
-public interface TaskQueue {
+public interface TaskQueueService {
     void addTask(Task task);
 
     Task getNextTask();

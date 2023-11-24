@@ -1,19 +1,22 @@
-package codefinity.taskManager.taskManagerImpl;
-
-import java.util.LinkedList;
-import java.util.Queue;
+package codefinity.taskManager;
 
 public class Task {
     private int id;
+    private String name;
     private String description;
 
-    public Task(int id, String description) {
+    public Task(int id, String name, String description) {
         this.id = id;
+        this.name = name;
         this.description = description;
     }
 
     public int getId() {
         return id;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public String getDescription() {
@@ -22,8 +25,10 @@ public class Task {
 
     @Override
     public String toString() {
-        return "Task{id=" + id + ", description='" + description + "'}";
+        return "Task{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                '}';
     }
 }
-
-

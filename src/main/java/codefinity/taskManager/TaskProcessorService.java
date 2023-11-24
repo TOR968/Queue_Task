@@ -1,5 +1,5 @@
 package codefinity.taskManager;
 
-public interface TaskProcessor {
+public interface TaskProcessorService {
     void processTasks();
 }
