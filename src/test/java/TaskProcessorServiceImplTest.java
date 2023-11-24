@@ -31,7 +31,6 @@ public class TaskProcessorServiceImplTest {
         TaskProcessorServiceImpl taskProcessorService = new TaskProcessorServiceImpl(mockTaskQueueService);
         taskProcessorService.processTasks();
 
-        // Проверяем, что методы заглушки были вызваны ожидаемое количество раз
         verify(mockTaskQueueService, never()).getNextTask();
         verify(mockTaskQueueService, atLeastOnce()).isEmpty();
     }
